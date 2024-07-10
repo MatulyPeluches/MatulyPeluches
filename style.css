@@ -148,6 +148,13 @@ evita descargar img en pagina web
 
 
 
+@media (max-width: 768px) {
+   .bubbles span {
+      width: 20px; /* Tamaño más pequeño para dispositivos móviles */
+      height: 20px;
+      animation-duration: calc(100s / var(--i)); /* Ajuste de duración de animación */
+   }
+}
 
 
  body {
