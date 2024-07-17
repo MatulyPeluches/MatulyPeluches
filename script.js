@@ -7,6 +7,16 @@ function cerrarMenu() {
 
 
 
+
+
+
+
+function cerrarMenu() {
+    document.getElementById('menu').checked = false;
+}
+
+
+
 document.addEventListener('scroll', function() {
     const menu = document.querySelector('.menu');
     if (window.scrollY > 0) {
