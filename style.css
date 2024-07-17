@@ -341,7 +341,25 @@ background-color: #DB241B;
     display: none;
  }
  
+
+
  
+ #close-icon {
+   display: none;
+}
+
+#menu:checked ~ nav .navbar {
+   display: block;
+}
+
+#menu:checked ~ #menu-label #menu-icon {
+   display: none;
+}
+
+#menu:checked ~ #menu-label #close-icon {
+   display: inline;
+}
+
 
  .menu-icono {
     width: 25px;
