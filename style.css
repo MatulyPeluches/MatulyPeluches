@@ -51,6 +51,12 @@
    }
 }
 
+@media (min-width: 768px) {
+   .evento {
+       display: none;
+   }
+}
+
 .info-txt p {
     font-size: 18px;
     color: #a7a7a7;
