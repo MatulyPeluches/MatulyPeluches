@@ -1,5 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+.image-row {
+   display: flex;
+    /* Permite que las imágenes pasen a la siguiente línea si no caben en una sola fila */
+   margin-left: -350px;
+   align-items: center;
+}
+.image-row img {
+   margin: 10px; /* Espacio entre las imágenes */
+   width: calc(5% - 5px); /* Ajusta el ancho de las imágenes */
+   height: 10%; /* Mantiene la proporción de las imágenes */
+ 
+}
+
+
+.image-3 {
+ margin-left: -40px;
+}
+
+@media (max-width: 768px) {
+   .image-row {
+       flex-direction: column;
+       align-items: center;
+      }
+   .image-row img {
+       width: 100%;
+       height: auto;
+       margin-right: -340PX;
+       align-items: center;
+   }
+   
+.image-3 {
+ margin-left: 10px;
+  }
+}
 
 
 @media (max-width: 767px) {
@@ -101,7 +137,7 @@ evita descargar img en pagina web
    max-width: 100%;
    margin: 0 auto;
    overflow: visible;
-   margin-top: -130px;
+   margin-top: 100px;
 }
 .bubbles {
    position: fixed;
@@ -145,7 +181,6 @@ evita descargar img en pagina web
       transform: translateY(-10vh)scale(1);
    }
 }
-
 
 
 @media (max-width: 768px) {
@@ -613,7 +648,7 @@ margin-top: 150px;
      
    }
    .mover-derecha {
-       margin-left: 20px; 
+       margin-left: 10px; 
        top: 0;
    }
    .mover-derecha2 {
@@ -650,6 +685,7 @@ margin-top: 150px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
+    
  }
 
  .info-txt p { 
@@ -690,6 +726,8 @@ margin-top: 150px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: center;
+    margin-top: -50px;
  }
 
  .horario-txt {
@@ -785,7 +823,7 @@ margin-top: 150px;
 
 .pie-pagina .grupo-1 {
    width: 100%;
-   max-width: 1200px;
+   max-width: 2000px;
    margin: auto;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -799,16 +837,34 @@ margin-top: 150px;
    display: flex;
    justify-content: center;
    align-items: center;
+   
 }
 
 .pie-pagina .grupo-1 .box figure img {
    width: 250px;
+   margin-left: 400PX;
 }
+
+@media (max-width: 768px) {
+   .pie-pagina .grupo-1 {
+       grid-template-columns: 1fr; /* Una columna en lugar de tres */
+       grid-gap: 20px; /* Reducir el espacio entre elementos */
+       padding: 20px 0px; /* Reducir el relleno */
+   }
+
+   .pie-pagina .grupo-1 .box figure img {
+       width: 80%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+       margin-left: 0; /* Eliminar el margen a la izquierda */
+   }
+}
+
+
 
 .pie-pagina .grupo-1 .box h2 {
    color: #ffffff;
    margin-bottom: 25px;
    font-size: 20px;
+   text-transform: uppercase;
 }
 
 
@@ -1153,7 +1209,7 @@ display: none;
     }
 
     .info-txt h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .info-txt p {
